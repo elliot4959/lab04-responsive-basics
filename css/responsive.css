@@ -1,0 +1,79 @@
+/* GLOBAL AND MOBILE STYLES FIRST */
+
+/*
+  - this applies to any screen sizes under 500px
+  - if you leave the width off, sections will automatically fill the full page width
+  - no margins and little or no padding
+*/
+body {
+  margin:0;
+  padding:0;
+  background: #222;
+}
+header {
+  background: #ccc;
+  color: #444;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 1em;
+}
+h2 {
+  font-size: 1.5em;
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #eee;
+  text-align: center;
+  padding: 2px;
+}
+section {
+  font-size: 1em;
+  background: #888;
+  margin: 1em 1% 1em 1%;
+}
+section:hover {
+  background: #666;
+}
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+  body {
+    background: #444;
+  }
+  section {
+    display: inline-block;
+    width: 44%;
+  }
+  /* 
+    - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
+    - add any hover states here
+    - increase font sizes
+    - add margins and padding to space things out
+    - decrease width of sections
+    - add `display: inline-block;` so that sections will float next to each other
+  */
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+  body {
+    background: #888;
+  }
+  section {
+    display: inline-block;
+    width: 22%;
+  }
+  /*
+    - applies to screens larger than 999px only
+    - add a max-width to your main section
+    - further decrease size of sections
+    - increase size of headings and global fonts
+  */
+}
+/* END SECOND BREAKPOINT */
