@@ -42,7 +42,7 @@ section:hover {
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   body {
-    background: #f00;
+    background: #444;
   }
   section {
     display: inline-block;
@@ -63,7 +63,7 @@ section:hover {
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
   body {
-    background: #0f0;
+    background: #888;
   }
   section {
     display: inline-block;
