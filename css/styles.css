@@ -1,11 +1,12 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
 
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   background: #222;
   color: #fff;
   text-align: center;
+  font-family: Calibri;
 }
 header {
   background: #ccc;
@@ -20,9 +21,10 @@ nav a {
   display: block;
 }
 #menu {
-  padding: 1em;
+  padding: 0.5em;
   background: #fff;
   display: block;
+  font-size: 20pt;
 }
 .show-menu {
   display: block;
@@ -57,6 +59,7 @@ section {
   }
   nav a:hover {
     background: #777;
+    color: #fff;
   }
   h1 {
     font-size: 2em;
@@ -73,7 +76,8 @@ section {
     color: #999;
   }
   section:hover {
-    background: #666;
+    background: #ddd;
+    color: #111;
   }
 }
 /* END FIRST BREAKPOINT */
